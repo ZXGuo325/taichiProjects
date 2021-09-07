@@ -1,6 +1,6 @@
 import taichi as ti
 import numpy as np
-ti.init(arch=ti.cuda)
+ti.init(arch=ti.cpu)
 quality = 1
 n_particles, n_grid = 9000 * quality ** 2, 128 * quality
 dx, inv_dx = 1 / n_grid, float(n_grid)
